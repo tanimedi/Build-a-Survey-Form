@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Meal Selection Survey</h1>
+    <p id="description">The results of this survey will help determine the meals for the event.</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Name"></input>
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="email"></input>
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number"  min="13" max="122" placeholder="Age"></input>
+    <p id="description2">Food Selection options below.</p>
+    <label for="drop-choice">Cuisine Type:</label>
+  <select id="dropdown" name="drop-choice" >
+    <option value="Asian">Asian</option>
+    <option value="Caribbean">Caribbean</option>
+    <option value="Mexican">Mexican</option>
+    <option value="Italian">Italian</option>
+  </select>
+    <p>Plant Based or Meat?</p>
+    <input type="radio" id="meat" name="plant" value="No">
+<label for="meat">Meat</label><br>
+<input type="radio" id="vegetarian" name="plant" value="vegetarian">
+<label for="vegetarian">Vegetarian</label><br>
+<input type="radio" id="vegan" name="plant" value="vegan">
+<label for="vegan">Vegan</label>
+
+<p id="allergies">Food Allergies?</p>
+<input type="checkbox" id="shellfish" name="allergies" value="shellfish">
+<label for="shellfish"> Shellfish</label><br>
+<input type="checkbox" id="nuts" name="allergies" value="nuts">
+<label for="Nuts">Nuts</label><br>
+<input type="checkbox" id="eggs" name="allergies" value="eggs">
+<label for="eggs">Eggs</label><br>
+
+<div id="text-box">
+<label for="box">Comments or suggestions?</label><br>
+<textarea id="box" name="comments" rows="4" cols="20"  placeholder="Enter your comments here"></textarea>
+  <br>
+  <input  id="submit" type="submit" value="Submit">
+</div >
+</form>
+  </body>
+</html>
